@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./admin.js"></script>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <form onsubmit="event.preventDefault();">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required />
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required />
+        </div>
+        <div>
+            <label for="title">Event Title:</label>
+            <input type="text" id="title" required />
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea type="text" id="description"></textarea>
+        </div>
+        <div>
+            <label for="image_url">Image Url:</label>
+            <input type="text" id="image_url" />
+        </div>
+        <div>
+            <label for="date">Date (YYYY-MM-DD):</label>
+            <input type="text" id="date" required />
+        </div>
+        <button type="button" onclick="handleSubmit('event/add')">Add Event</button>
+    </form>
+    <h2>Existing Events</h2>
+    <div id="event-list">
+        <!-- Events will be listed here with checkboxes -->
+    </div>
+    <button type="button" onclick="handleRemoveSelected()">Remove Selected Events</button>
+</body>
+</html>

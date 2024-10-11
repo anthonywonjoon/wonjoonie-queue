@@ -1,0 +1,21 @@
+.hp_banner_container {
+    justify-content: center;
+    text-align: center;
+    padding-top: 48px;
+}
+
+.hp_logo {
+    width: 100px;
+}
+
+.hp_social_logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+#app-tabs {
+    width: 600px;
+    text-align: center;
+    justify-content:center;
+
+}
